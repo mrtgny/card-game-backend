@@ -26,8 +26,5 @@ services:
       POSTGRES_PASSWORD: katana123
       POSTGRES_PORT: 5435
     container_name: card-game-backend
-    volumes:
-      - app:/usr/src/app
 volumes:
   postgres-data:
-  app:

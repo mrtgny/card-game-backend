@@ -4,6 +4,8 @@
   "description": "Card game api",
   "main": "src/index.ts",
   "scripts": {
+    "build": "npx tsc",
+    "start-ci": "node ./dist/server",
     "start": "NODE_ENV=development npx nodemon ./src/index.ts",
     "test": "NODE_ENV=test mocha --require ts-node/register src/test/*.ts --timeout 10000 --exit"
   },
