@@ -5,6 +5,7 @@ WORKDIR /usr/src/app/reactivers
 COPY . .
 RUN yarn
 RUN npm run build
+
 EXPOSE 8000
 
 CMD  ["npm", "run", "start-ci"]
